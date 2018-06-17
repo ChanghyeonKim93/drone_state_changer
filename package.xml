@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>state_changer</name>
+  <version>0.0.1</version>
+  <description>The state changer package</description>
+
+  <maintainer email="hyun91015@gmail.com">Changhyeon Kim</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <export>
+  </export>
+</package>

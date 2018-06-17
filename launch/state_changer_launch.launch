@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<launch>
+<arg name="vicon_topic_name"          	 default="/vicon/CHK_M100/CHK_M100"/>
+<!--arg name="vicon_topic_name"		 default="/vicon/OBSTACLE1/OBSTACLE1"/-->
+<arg name="vo_topic_name"      		 default="/sgpvo/pose"/>
+
+<arg name="publish_topic_name" 		 default="/measurement_selection/pose"/>
+
+<node pkg="state_changer" type="state_changer_node" name="state_changer" output="screen">
+	<param name="vicon_topic_name"   type="string" value="$(arg vicon_topic_name)"/>
+	<param name="vo_topic_name"      type="string" value="$(arg vo_topic_name)"/>
+	<param name="publish_topic_name" type="string" value="$(arg publish_topic_name)"/>
+</node>
+</launch>
